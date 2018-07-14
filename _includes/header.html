@@ -2,6 +2,7 @@
 
 {% if page.bigimg or page.title %}
 
+
 {% if page.bigimg %}
   <div id="header-big-imgs" data-num-img={% if page.bigimg.first %}{{ page.bigimg.size }}{% else %}1{% endif %}
     {% for bigimg in page.bigimg %}
@@ -18,7 +19,10 @@
   ></div>
 {% endif %}
 
+
+
 <header class="header-section {% if page.bigimg %}has-img{% endif %}">
+
 {% if page.bigimg %}
 <div class="big-img intro-header">
   <div class="container">
@@ -26,7 +30,7 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="{{ include.type }}-heading">
           <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-		  {% if page.subtitle %}
+      {% if page.subtitle %}
 		    {% if include.type == "page" %}
             <hr class="small">
             <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
@@ -34,7 +38,6 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Postado em {{ page.date | date: "%d/%m/%Y" }}</span>
 		  {% endif %}
@@ -51,15 +54,29 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="{{ include.type }}-heading">
           <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-		  {% if page.subtitle %}
-		    {% if include.type == "page" %}
+      {% if page.subtitle %}
+        {% if include.type == "page" %}
             <hr class="small">
             <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+            <br>
+            <div class="main-explain-area jumbotron">
+              <i class="fa fa-laptop fa-4x"></i>
+              <p>A cada dia novos desafios e está sendo maravilhoso, não deixe de conferir um pouco mais
+                <strong>
+                  <a href="http://diegonoronha.com.br/sobremim" target="_blank">sobre mim...</strong>
+                <div class="get-started-wrap">
+                  <a class="btn btn-success btn-lg get-started-btn" href="http://diegonoronha.com.br/sobremim">Vamos lá!</a>
+                </div>
+                <br>
+                <i class="fa fa-arrow-down fa-2x"></i>
+            </div>
+       
+      {% else %}
+      
+      <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+      
 			{% endif %}
-		  {% endif %}
-
+      {% endif %}
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Postado em {{ page.date | date: "%d/%m/%Y" }}</span>
 		  {% endif %}
@@ -69,7 +86,6 @@
   </div>
 </div>
 </header>
-
 
 {% else %}
 <div class="intro-header"></div>
