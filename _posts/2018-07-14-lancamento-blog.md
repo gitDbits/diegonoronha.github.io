@@ -9,7 +9,7 @@ Até que enfim :| Adiei muito para lançar o meu blog e trocar algumas experiên
 que aprendi e estou aprendendo como **Desenvolvedor**. Eu me chamo **Diego Noronha**,
 fique a vontade para contribuir e aprender com esse blog.
 
-Caso você queira um pouco da minha experiencia é só conferir em [Sobre mim](http://diegonoronha/sobremim){:target="_blank"}.
+Caso você queira um pouco da minha experiencia é só conferir em [Sobre mim](http://diegonoronha.com.br/sobremim){:target="_blank"}.
 
 Vamos falar um pouquinho do blog, digo a sua estrutura. Logo de começo pensei, vou
 fazer em Wordpress =p, por isso demorei bastante, não pelo fato do Wordpress ser ruim,
