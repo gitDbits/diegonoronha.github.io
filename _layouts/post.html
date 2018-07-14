@@ -33,6 +33,8 @@ layout: base
 
       <article role="main" class="blog-post">
         {{ content }}
+
+        
       </article>
 
       {% if page.tags.size > 0 %}
@@ -65,11 +67,23 @@ layout: base
         {% endif %}
       </ul>
 
-      {% if page.comments %}
-        <div class="disqus-comments">
-          {% include disqus.html %}
-        </div>
-      {% endif %}
+      <h2>Comentários <span class="fa fa-comments"></span></h2>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = '{{site.url}}{{page.url}}';
+          this.page.identifier = '{{page.url}}';
+        };
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://diego-noronha.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
     </div>
   </div>
 </div>

@@ -772,3 +772,11 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+
