@@ -60,7 +60,7 @@ Um pouquinho do que aprendi e venho aprendendo ao longo dos anos:
 
 * TDD/BDD: Rspec - Capybara - Factory Bot
 
-* Mysql - SQL Server
+* MySQL - MSSQL Server
 
 * Continuos Integration: Travis - Codeship
 
