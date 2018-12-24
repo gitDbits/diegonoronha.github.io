@@ -48,7 +48,7 @@ Um pouquinho do que aprendi e venho aprendendo ao longo dos anos:
 
 * Javascript
 
-* CSS framework bootstrap
+* CSS framework bootstrap e Materialize
 
 * GIT
 
