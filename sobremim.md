@@ -9,6 +9,8 @@ Um ser totalmente comunicativo e que adora trabalhar em equipe, por isso a ideia
 
 Vamos aos JOBS!
 
+* Atualmente estou no Governo do estado de Rondônia na SUGESP como Analista e Desenvolvedor, o desafio foi assumir um projeto em CAKEPHP em uma versão muita antiga, depois de alguma reuniões conseguimos convencer a migrar todos os projetos para [Ruby on Rails](https://rubyonrails.org/){:target="_blank"}, está sendo uma experiência incrível que prometo escrever um post sobre isso.
+
 * Na [Nuble](http://nuble.com.br){:target="_blank"} desenvolvi projetos em [Ruby on Rails](https://rubyonrails.org/){:target="_blank"}, tanto API quanto um APP de controle de créditos, utilizando HTML, CSS e JavaScrit e ainda consegui me aventurar com uma framework em Delphi chamada [Unigui](http://www.unigui.com){:target="_blank"}.
 
 * A [Supersys Tecnologia](http://supersys.com.br){:target="_blank"} me ensinou o conceito de como **analisar um sistema** e a importância de se **fazer testes**, logo assumi o cargo de Analista de Teste dos produtos oferecidos por essa softhouse, foi uma experiência incrível de aprendizado.
