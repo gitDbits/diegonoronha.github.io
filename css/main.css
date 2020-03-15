@@ -7,6 +7,7 @@ layout: null
 /* --- General --- */
 
 body {
+  text-align: justify;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
   color: #404040;
@@ -106,7 +107,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: {{ site.navbar-col }};
+  background-color: #65587f;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
