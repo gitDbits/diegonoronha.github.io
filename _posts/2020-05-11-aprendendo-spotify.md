@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Desenvolvendo o JOB Go!
-image: /img/job_go.png
-tags: RubyOnRails TDD
+title: Novas skills - Spotify
+image: /img/spotify.png
+tags: RubyOnRails React
 ---
 
-Projeto desenvolvido no bootcamp da [Campus Code <span class="fa fa-external-link"></span>](https://campuscode.com.br/){:target="_blank"} uma das melhores experiências que tive na vida em **São Paulo!** Se gostou, segue la no [GitHub <span class="fa fa-external-link"></span>](https://github.com/gitDbits/job_go){:target="_blank"}
+Eu sempre me perguntei e demorou eu entender que a profissão de programador se faz necessário sempre buscar inspiração, seja em um projeto, uma linguagem e até mesmo a necessidade de resolver um problema ou uma crise.
 
-<br>	
+
+Pra, vamos de: [<span class="fa fa-music"></span> CyberPunkMix - 2077 ](https://www.youtube.com/watch?v=vSFmDxn-cK8){:target="_blank"} 
+
+
 # Job GO! [Ver o projeto <span class="fa fa-external-link"></span>](https://jobgo.herokuapp.com/){:target="blank"}
 
 [![Build Status](https://travis-ci.org/gitDbits/job_go.svg?branch=master)](https://travis-ci.org/gitDbits/job_go) [![Maintainability](https://api.codeclimate.com/v1/badges/9636fa9165d3c122b696/maintainability)](https://codeclimate.com/github/gitDbits/job_go/maintainability)
@@ -15,11 +18,8 @@ Projeto desenvolvido no bootcamp da [Campus Code <span class="fa fa-external-lin
 
 ![Screenshot](https://i.imgur.com/J3FsQn4.png)
 
-Em época de quarenta, vamos de: [<span class="fa fa-music"></span> CyberPunkMix - 2077 ](https://www.youtube.com/watch?v=vSFmDxn-cK8){:target="_blank"} 
-
 Fique a vontade em utilizar o projeto, ou caso queira enviar alguma alteração, basta enviar **aquele fork**
-
-<br>  
+  
 ### Com o JobGO você podera fazer: 
 
 * Cadastrar e editar empresas.
@@ -38,7 +38,7 @@ Fique a vontade em utilizar o projeto, ou caso queira enviar alguma alteração,
 
 * As vagas de trabalho que expiraram após 90 dias.
 
-<br>
+
 ### Setup básico...
 
 1. **Instalar o Ruby on Rails:**
@@ -55,7 +55,8 @@ Fique a vontade em utilizar o projeto, ou caso queira enviar alguma alteração,
 ```
 	git clone https://github.com/gitDbits/job_go.git
 ```
-<br>
+<hr>
+<hr>
 ## Vamos lá
 
 Abra o seu terminal e **execute os seguintes comandos:**
@@ -84,7 +85,9 @@ rails db:migrate
 ```
 rails s
 ```
-<br>
+
+<hr>
+<hr>
 ## Conferindo os testes :)
 
 Caso queira **executar os testes** basta **executar no seu terminal:**
@@ -99,7 +102,7 @@ Que tal melhorar a **cobertura no projeto**, depois de alterar faça aquele fork
 
 ![Cobertura testes](/img/simplecov.png)
 
-<br>
+
 ## Construido com
 
 *  [Ruby on Rails](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
@@ -116,7 +119,6 @@ Que tal melhorar a **cobertura no projeto**, depois de alterar faça aquele fork
 
 *  [Jquery mask rails](https://github.com/maurcarvalho/jquery_mask_rails) - A Rails gem of the jQuery Plugin mask
 
-<br>
 ## Conclusão
 
 Ficou com **dúvida**, **alguma sugestão?** Fique a vontade em utilizar os **comentários :)** 
