@@ -1,42 +1,42 @@
 ---
 layout: post
-title: Novas skills - Spotify
+title: Novas skills - SpotCode
 image: /img/spotify.png
 tags: RubyOnRails React
 ---
 
-Eu sempre me perguntei e demorou eu entender que a profissão de programador se faz necessário sempre buscar inspiração, seja em um projeto, uma linguagem e até mesmo a necessidade de resolver um problema ou uma crise.
+Eu sempre me perguntei e demorou eu entender que a profissão de programador se faz necessário sempre buscar inspiração, seja em um projeto, uma linguagem ou até mesmo a necessidade de resolver um problema ou uma crise.
 
+Hoje, vamos de: [<span class="fa fa-music"></span> Hadouken Theme Song](https://www.youtube.com/watch?v=ncVGKT9Y7fY){:target="_blank"} 
 
-Pra, vamos de: [<span class="fa fa-music"></span> CyberPunkMix - 2077 ](https://www.youtube.com/watch?v=vSFmDxn-cK8){:target="_blank"} 
+A ideia é, vamos navegar no universo do front-end, começando com [React](https://pt-br.reactjs.org/){:target="_blank"}, uma biblioteca JavaScript para criar interfaces de usuários, baseados em componentes. 
 
+# SpotCode! 
 
-# Job GO! [Ver o projeto <span class="fa fa-external-link"></span>](https://jobgo.herokuapp.com/){:target="blank"}
+![Screenshot](https://camo.githubusercontent.com/806831d1765acaf13e23f4c205990b4f29f5a32f/68747470733a2f2f692e696d6775722e636f6d2f6a706b764a4c382e706e67)
 
-[![Build Status](https://travis-ci.org/gitDbits/job_go.svg?branch=master)](https://travis-ci.org/gitDbits/job_go) [![Maintainability](https://api.codeclimate.com/v1/badges/9636fa9165d3c122b696/maintainability)](https://codeclimate.com/github/gitDbits/job_go/maintainability)
+## Estrutura
+	* Backend API em Ruby on Rails 6
+	* FrontEnd em React
+	* E muita felicidade em aprender algo novo, ainda mais React :)
 
+### No SpotCode, você poderá: 
 
-![Screenshot](https://i.imgur.com/J3FsQn4.png)
+* Ouvir as suas músicas pelo seu estilo favorito.
 
-Fique a vontade em utilizar o projeto, ou caso queira enviar alguma alteração, basta enviar **aquele fork**
-  
-### Com o JobGO você podera fazer: 
+* Ouvir as músicas tocadas recentemente.
 
-* Cadastrar e editar empresas.
+* Ouvir as músicas recomendadas.
 
-* Cadastrar e editar categorias.
+* Conferir as músicas separadas por álbums e artistas e seus diferentes estilos.
 
-* Cadastrar vagas de trabalho.
+* Favoritar as suas músicas, albums e artistas e conferir essa lista.
 
-* Visualizar vagas de trabalho por empresa e por categoria.
+* Poderá tocar as musicas aleatoriamente.
 
-* Visualizar vagas em destaque, através de uma marcação.
+* Realizar busca pelo nome: Música, Artista, Album.
 
-* Visualizar empresa que estão em destaque.
-
-* Visualizar vagas recentes.
-
-* As vagas de trabalho que expiraram após 90 dias.
+* Login e cadastro de usuaŕio e suas validações.
 
 
 ### Setup básico...
@@ -49,21 +49,21 @@ Fique a vontade em utilizar o projeto, ou caso queira enviar alguma alteração,
 	- No **MAC OS** "you rico man :o", [Install Ruby on Rails MAC OS <span class="fa fa-external-link"></span>](https://gorails.com/setup/osx/10.15-catalina){:target="_blank"}
 
 2. **Realizar o clone do projeto**
-	- O projeto se encontra no GitHub [Job GO on GitHub <span class="fa fa-external-link"></span>](https://github.com/gitDbits/job_go.git){:target="_blank"}, ou se preferir, abra o seu terminal e **execute o seguinte comando:** <br><br>
+	- O projeto se encontra no GitHub [Job GO on GitHub <span class="fa fa-external-link"></span>](https://github.com/gitDbits/spotcode.git){:target="_blank"}, ou se preferir, abra o seu terminal e **execute o seguinte comando:** <br><br>
 		
-	
 ```
-	git clone https://github.com/gitDbits/job_go.git
+	git clone https://github.com/gitDbits/spotcode.git
 ```
-<hr>
-<hr>
+
 ## Vamos lá
+
+Verifique os requisitos abaixo, fique a vontade para realizar o clone do projeto e realizar suas modificações.
 
 Abra o seu terminal e **execute os seguintes comandos:**
 
 *Acesse a pasta em que se encontra o projeto*
 ```
-cd job_go 
+cd spotcode 
 ```
 
 *Instale a dependência das GEMS*
@@ -71,53 +71,69 @@ cd job_go
 bundle 
 ```
 
-*Crie o banco de dados, por default ele ira criar em SQLite*
+*Instalando o YARN*
+```
+yarn install --check-files
+```
+
+*Arquivos iniciais do spotcode*
+
+- Os arquivos para utilização na aplicação spotcode: Músicas, Imagem,  Artista, Imagem dos álbuns pode ser realizado, no link abaixo;
+
+- Download [cliquei aqui](https://drive.google.com/open?id=1qp4bzU7nYr2P9cM__3SSH16xGCwneP3S) 
+
+**Após realizar o download da pasta seed_files, mover para a pasta /spotcode/tmp/**
+
+*Criar o banco de dados, por default ele ira criar em SQLite*
 ```
 rails db:create 
 ```
 
-*Rode as migrations do schema do banco de dados*
+*Rodar as migrations do schema do banco de dados*
 ```
 rails db:migrate 
+```
+
+*Executar os seeds*
+
+Neste arquivo você pode conferir as informações iniciais para o projeto spotcode/db/seeds.rb
+
+```
+rails db:seed
+```
+
+*Instalar o webpacker*
+```
+bundle exec rails webpacker:install
+```
+
+*Atualizar navegador automaticamente*
+
+Após qualquer alteração no código: basta abrir um outro terminal e executar o seguinte comando:  
+
+```
+bin/webpack-dev-server 
 ```
 
 *Execute o servidor local para visualizar o projeto*
 ```
 rails s
 ```
-
-<hr>
-<hr>
-## Conferindo os testes :)
-
-Caso queira **executar os testes** basta **executar no seu terminal:**
-
-```
-rspec
-```
-
-O **TDD**  *(Test Drive Development)* se bem aplicado tem **ótimos resultados na manutenção de um projeto**, logo os 27 testes da aplicaçao encontra-se na pasta **job_go/spec/features/** confere lá :)
-
-Que tal melhorar a **cobertura no projeto**, depois de alterar faça aquele fork no GitHub :)
-
-![Cobertura testes](/img/simplecov.png)
-
-
 ## Construido com
 
-*  [Ruby on Rails](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+*  [Ruby on Rails](https://rubyonrails.org/) - Rails is a web application development framework written in the Ruby programming language
 
-*  [Rspec](https://github.com/rspec/rspec) - Framework BDD
+* [React](https://github.com/facebook/react/blob/master/README.md) - React is a JavaScript library for building user interfaces.
 
-*  [Capybara](https://github.com/teamcapybara/capybara) - Helps you test web applications
+* [Web Packer Rails](https://github.com/rails/webpacker) - Web Packer Rails
 
-*  [SimpleCov](https://github.com/colszowka/simplecov) - Code coverage analysis tool for Ruby
+* [JBuilder](https://github.com/rails/jbuilder/blob/master/README.md) - JSON structures that beats manipulating giant hash structures
 
-*  [Rubocop](https://github.com/rubocop-hq/rubocop) - A Ruby static code analyzer
+* [Devise](https://github.com/heartcombo/devise) - Flexible authentication solution for Rails with Warden
 
-*  [friendly_id](https://github.com/norman/friendly_id) - Create pretty URL’s and work with human-friendly
+* [Rack-cors](https://github.com/cyu/rack-cors) - Rack Middleware for handling Cross-Origin Resource Sharing (CORS)
 
-*  [Jquery mask rails](https://github.com/maurcarvalho/jquery_mask_rails) - A Rails gem of the jQuery Plugin mask
+* [Toast-rails](https://github.com/tylergannon/toastr-rails) - Messages beautiful based toasttrjs
 
 ## Conclusão
 
